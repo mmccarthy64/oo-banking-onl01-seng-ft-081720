@@ -11,9 +11,7 @@ class Transfer
   end
   
   def both_valid?
-    sender = BankAccount.valid?(@sender)
-    reciever = BankAccount.valid?(@reciever)
-    if sender && reciever == true
+    if sender.valid? && reciever == true
       true
     end
   end
