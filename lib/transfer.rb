@@ -11,7 +11,7 @@ class Transfer
   end
   
   def both_valid?
-    if sender.valid? && reciever == true
+    if sender.valid? && reciever.valid?
       true
     end
   end
