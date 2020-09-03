@@ -22,7 +22,7 @@ class Transfer
       @status = "rejected"
       puts "Transaction rejected. Please check your account balance."
     else
-      
+      count -= 1
       @sender.deposit(@amount * -1)
       @receiver.deposit(@amount)
       @status = "complete"
