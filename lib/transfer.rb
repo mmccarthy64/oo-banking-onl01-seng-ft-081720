@@ -20,7 +20,7 @@ class Transfer
     if @sender.balance < @amount
       puts "Transaction rejected. Please check your account balance."
     else
-      @sender.deposit(@amount)
+      @sender.deposit(@deposit - @amount)
       @receiver.deposit(@amount)
       
     end
